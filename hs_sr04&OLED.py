@@ -64,7 +64,7 @@ if __name__ == '__main__':
     try:
         while True:
             dist = sr04.distance()
-            draw.text((PADDING,TOP),'Measured Distance = %.1f cm'%dist,font=font,fill=255)
+            draw.text((PADDING,TOP),'Distance = %.1f cm'%dist,font=font,fill=255)
             disp.image(frame)
             disp.display()
             time.sleep(1)
