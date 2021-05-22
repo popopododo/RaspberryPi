@@ -3,9 +3,7 @@
     <title>Flask LED Control</title>
 </head>
 <body>
-    <button action="{{ url_for('led_on')}}">On</button>
-    <button action="/led/off/">Off</button>
-    <button type="button" onclick="location.href"='/led/off'>Off</button>
-    
+    <a href="{{url_for('led_on')}}">On</a>
+    <a href="{{url_for('led_off')}}">Off</a>
 </body>
 </html>
